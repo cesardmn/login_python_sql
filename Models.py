@@ -2,7 +2,7 @@ from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-CONN = "sqlite:///projeto2.db"
+CONN = "sqlite:///login.db"
 
 engine = create_engine(CONN, echo=True)
 Session = sessionmaker(bind=engine)

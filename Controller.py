@@ -5,7 +5,7 @@ import hashlib
 
 
 def retorna_session():
-    CONN = "sqlite:///./projeto2.db"
+    CONN = "sqlite:///./login.db"
     engine = create_engine(CONN, echo=True, connect_args={"check_same_thread": False})
     Session = sessionmaker(bind=engine)
     return Session()
